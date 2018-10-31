@@ -1,0 +1,30 @@
+------------------------------
+in apriori
+------------------------------
+('C1', [frozenset([1]), frozenset([2]), frozenset([3]), frozenset([4]), frozenset([5])])
+('D', [set([1, 3, 4]), set([2, 3, 5]), set([1, 2, 3, 5]), set([2, 5])])
+('L1', [frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5])])
+('supportData', {frozenset([4]): 0.25, frozenset([5]): 0.75, frozenset([2]): 0.75, frozenset([3]): 0.75, frozenset([1]): 0.5})
+('L[k-2]', [frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5])])
+('Ck', [frozenset([1, 3]), frozenset([1, 2]), frozenset([1, 5]), frozenset([2, 3]), frozenset([3, 5]), frozenset([2, 5])])
+('Lk', [frozenset([1, 3]), frozenset([2, 5]), frozenset([2, 3]), frozenset([3, 5])])
+('supK', {frozenset([1, 2]): 0.25, frozenset([1, 5]): 0.25, frozenset([3, 5]): 0.5, frozenset([2, 3]): 0.5, frozenset([2, 5]): 0.75, frozenset([1, 3]): 0.5})
+('L', [[frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5])], [frozenset([1, 3]), frozenset([2, 5]), frozenset([2, 3]), frozenset([3, 5])]])
+('supportData', {frozenset([5]): 0.75, frozenset([3]): 0.75, frozenset([1, 2]): 0.25, frozenset([1, 5]): 0.25, frozenset([3, 5]): 0.5, frozenset([4]): 0.25, frozenset([2, 3]): 0.5, frozenset([2, 5]): 0.75, frozenset([1]): 0.5, frozenset([1, 3]): 0.5, frozenset([2]): 0.75})
+('L[k-2]', [frozenset([1, 3]), frozenset([2, 5]), frozenset([2, 3]), frozenset([3, 5])])
+('Ck', [frozenset([2, 3, 5])])
+('Lk', [frozenset([2, 3, 5])])
+('supK', {frozenset([2, 3, 5]): 0.5})
+('L', [[frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5])], [frozenset([1, 3]), frozenset([2, 5]), frozenset([2, 3]), frozenset([3, 5])], [frozenset([2, 3, 5])]])
+('supportData', {frozenset([5]): 0.75, frozenset([3]): 0.75, frozenset([2, 3, 5]): 0.5, frozenset([1, 2]): 0.25, frozenset([1, 5]): 0.25, frozenset([3, 5]): 0.5, frozenset([4]): 0.25, frozenset([2, 3]): 0.5, frozenset([2, 5]): 0.75, frozenset([1]): 0.5, frozenset([1, 3]): 0.5, frozenset([2]): 0.75})
+('L[k-2]', [frozenset([2, 3, 5])])
+('Ck', [])
+('Lk', [])
+('supK', {})
+('L', [[frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5])], [frozenset([1, 3]), frozenset([2, 5]), frozenset([2, 3]), frozenset([3, 5])], [frozenset([2, 3, 5])], []])
+('supportData', {frozenset([5]): 0.75, frozenset([3]): 0.75, frozenset([2, 3, 5]): 0.5, frozenset([1, 2]): 0.25, frozenset([1, 5]): 0.25, frozenset([3, 5]): 0.5, frozenset([4]): 0.25, frozenset([2, 3]): 0.5, frozenset([2, 5]): 0.75, frozenset([1]): 0.5, frozenset([1, 3]): 0.5, frozenset([2]): 0.75})
+------------------------------
+out apriori
+------------------------------
+('L', [[frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5])], [frozenset([1, 3]), frozenset([2, 5]), frozenset([2, 3]), frozenset([3, 5])], [frozenset([2, 3, 5])], []])
+('suppData', {frozenset([5]): 0.75, frozenset([3]): 0.75, frozenset([2, 3, 5]): 0.5, frozenset([1, 2]): 0.25, frozenset([1, 5]): 0.25, frozenset([3, 5]): 0.5, frozenset([4]): 0.25, frozenset([2, 3]): 0.5, frozenset([2, 5]): 0.75, frozenset([1]): 0.5, frozenset([1, 3]): 0.5, frozenset([2]): 0.75})

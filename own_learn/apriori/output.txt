@@ -1,0 +1,716 @@
+------------------------------
+in apriori
+------------------------------
+('C1', [frozenset([1]), frozenset([2]), frozenset([3]), frozenset([4]), frozenset([5])])
+('D', [set([1, 3, 4]), set([2, 3, 5]), set([1, 2, 3, 5]), set([2, 5]), set([1, 2, 3, 4, 5])])
+('L1', [frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5]), frozenset([4])])
+('L', [[frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5]), frozenset([4])]])
+('supportData', {frozenset([4]): 0.4, frozenset([5]): 0.8, frozenset([2]): 0.8, frozenset([3]): 0.8, frozenset([1]): 0.6})
+('L[k-2]', [frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5]), frozenset([4])])
+('Ck', [frozenset([1, 3]), frozenset([1, 2]), frozenset([1, 5]), frozenset([1, 4]), frozenset([2, 3]), frozenset([3, 5]), frozenset([3, 4]), frozenset([2, 5]), frozenset([2, 4]), frozenset([4, 5])])
+('Lk', [frozenset([1, 3]), frozenset([2, 5]), frozenset([2, 3]), frozenset([3, 4]), frozenset([3, 5]), frozenset([1, 4]), frozenset([1, 5]), frozenset([1, 2])])
+('supK', {frozenset([2, 4]): 0.2, frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1, 3]): 0.6, frozenset([4, 5]): 0.2})
+('L', [[frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5]), frozenset([4])], [frozenset([1, 3]), frozenset([2, 5]), frozenset([2, 3]), frozenset([3, 4]), frozenset([3, 5]), frozenset([1, 4]), frozenset([1, 5]), frozenset([1, 2])]])
+('supportData', {frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([3, 4]): 0.4, frozenset([4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([1, 3]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('L[k-2]', [frozenset([1, 3]), frozenset([2, 5]), frozenset([2, 3]), frozenset([3, 4]), frozenset([3, 5]), frozenset([1, 4]), frozenset([1, 5]), frozenset([1, 2])])
+('Ck', [frozenset([1, 3, 4]), frozenset([1, 3, 5]), frozenset([1, 2, 3]), frozenset([2, 3, 5]), frozenset([3, 4, 5]), frozenset([1, 4, 5]), frozenset([1, 2, 4]), frozenset([1, 2, 5])])
+('Lk', [frozenset([1, 2, 3]), frozenset([1, 3, 4]), frozenset([1, 2, 5]), frozenset([2, 3, 5]), frozenset([1, 3, 5])])
+('supK', {frozenset([1, 3, 5]): 0.4, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 3]): 0.4})
+('L', [[frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5]), frozenset([4])], [frozenset([1, 3]), frozenset([2, 5]), frozenset([2, 3]), frozenset([3, 4]), frozenset([3, 5]), frozenset([1, 4]), frozenset([1, 5]), frozenset([1, 2])], [frozenset([1, 2, 3]), frozenset([1, 3, 4]), frozenset([1, 2, 5]), frozenset([2, 3, 5]), frozenset([1, 3, 5])]])
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('L[k-2]', [frozenset([1, 2, 3]), frozenset([1, 3, 4]), frozenset([1, 2, 5]), frozenset([2, 3, 5]), frozenset([1, 3, 5])])
+('Ck', [frozenset([1, 2, 3, 5]), frozenset([1, 3, 4, 5])])
+('Lk', [frozenset([1, 2, 3, 5])])
+('supK', {frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2})
+('L', [[frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5]), frozenset([4])], [frozenset([1, 3]), frozenset([2, 5]), frozenset([2, 3]), frozenset([3, 4]), frozenset([3, 5]), frozenset([1, 4]), frozenset([1, 5]), frozenset([1, 2])], [frozenset([1, 2, 3]), frozenset([1, 3, 4]), frozenset([1, 2, 5]), frozenset([2, 3, 5]), frozenset([1, 3, 5])], [frozenset([1, 2, 3, 5])]])
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('L[k-2]', [frozenset([1, 2, 3, 5])])
+('Ck', [])
+('Lk', [])
+('supK', {})
+('L', [[frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5]), frozenset([4])], [frozenset([1, 3]), frozenset([2, 5]), frozenset([2, 3]), frozenset([3, 4]), frozenset([3, 5]), frozenset([1, 4]), frozenset([1, 5]), frozenset([1, 2])], [frozenset([1, 2, 3]), frozenset([1, 3, 4]), frozenset([1, 2, 5]), frozenset([2, 3, 5]), frozenset([1, 3, 5])], [frozenset([1, 2, 3, 5])], []])
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+------------------------------
+out apriori
+------------------------------
+('L', [[frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5]), frozenset([4])], [frozenset([1, 3]), frozenset([2, 5]), frozenset([2, 3]), frozenset([3, 4]), frozenset([3, 5]), frozenset([1, 4]), frozenset([1, 5]), frozenset([1, 2])], [frozenset([1, 2, 3]), frozenset([1, 3, 4]), frozenset([1, 2, 5]), frozenset([2, 3, 5]), frozenset([1, 3, 5])], [frozenset([1, 2, 3, 5])], []])
+('suppData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+------------------------------
+in generateRules
+------------------------------
+('L', [[frozenset([1]), frozenset([3]), frozenset([2]), frozenset([5]), frozenset([4])], [frozenset([1, 3]), frozenset([2, 5]), frozenset([2, 3]), frozenset([3, 4]), frozenset([3, 5]), frozenset([1, 4]), frozenset([1, 5]), frozenset([1, 2])], [frozenset([1, 2, 3]), frozenset([1, 3, 4]), frozenset([1, 2, 5]), frozenset([2, 3, 5]), frozenset([1, 3, 5])], [frozenset([1, 2, 3, 5])], []])
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('H1', [frozenset([1]), frozenset([3])])
+('i', 1)
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([1]), frozenset([3])])
+('freqSet', frozenset([1, 3]))
+('conseq', frozenset([1]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.6)
+('freqSet-conseq', frozenset([3]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.7499999999999999)
+(frozenset([3]), '-->', frozenset([1]), 'conf:', 0.7499999999999999)
+('freqSet', frozenset([1, 3]))
+('conseq', frozenset([3]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.6)
+('freqSet-conseq', frozenset([1]))
+('supportData[freqSet-conseq]', 0.6)
+('conf', 1.0)
+(frozenset([1]), '-->', frozenset([3]), 'conf:', 1.0)
+------------------------------
+out calcConf
+------------------------------
+('H1', [frozenset([2]), frozenset([5])])
+('i', 1)
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([2]), frozenset([5])])
+('freqSet', frozenset([2, 5]))
+('conseq', frozenset([2]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.8)
+('freqSet-conseq', frozenset([5]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 1.0)
+(frozenset([5]), '-->', frozenset([2]), 'conf:', 1.0)
+('freqSet', frozenset([2, 5]))
+('conseq', frozenset([5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.8)
+('freqSet-conseq', frozenset([2]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 1.0)
+(frozenset([2]), '-->', frozenset([5]), 'conf:', 1.0)
+------------------------------
+out calcConf
+------------------------------
+('H1', [frozenset([2]), frozenset([3])])
+('i', 1)
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([2]), frozenset([3])])
+('freqSet', frozenset([2, 3]))
+('conseq', frozenset([2]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.6)
+('freqSet-conseq', frozenset([3]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.7499999999999999)
+(frozenset([3]), '-->', frozenset([2]), 'conf:', 0.7499999999999999)
+('freqSet', frozenset([2, 3]))
+('conseq', frozenset([3]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.6)
+('freqSet-conseq', frozenset([2]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.7499999999999999)
+(frozenset([2]), '-->', frozenset([3]), 'conf:', 0.7499999999999999)
+------------------------------
+out calcConf
+------------------------------
+('H1', [frozenset([3]), frozenset([4])])
+('i', 1)
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([3]), frozenset([4])])
+('freqSet', frozenset([3, 4]))
+('conseq', frozenset([3]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([4]))
+('supportData[freqSet-conseq]', 0.4)
+('conf', 1.0)
+(frozenset([4]), '-->', frozenset([3]), 'conf:', 1.0)
+('freqSet', frozenset([3, 4]))
+('conseq', frozenset([4]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([3]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.5)
+(frozenset([3]), '-->', frozenset([4]), 'conf:', 0.5)
+------------------------------
+out calcConf
+------------------------------
+('H1', [frozenset([3]), frozenset([5])])
+('i', 1)
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([3]), frozenset([5])])
+('freqSet', frozenset([3, 5]))
+('conseq', frozenset([3]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.6)
+('freqSet-conseq', frozenset([5]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.7499999999999999)
+(frozenset([5]), '-->', frozenset([3]), 'conf:', 0.7499999999999999)
+('freqSet', frozenset([3, 5]))
+('conseq', frozenset([5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.6)
+('freqSet-conseq', frozenset([3]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.7499999999999999)
+(frozenset([3]), '-->', frozenset([5]), 'conf:', 0.7499999999999999)
+------------------------------
+out calcConf
+------------------------------
+('H1', [frozenset([1]), frozenset([4])])
+('i', 1)
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([1]), frozenset([4])])
+('freqSet', frozenset([1, 4]))
+('conseq', frozenset([1]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([4]))
+('supportData[freqSet-conseq]', 0.4)
+('conf', 1.0)
+(frozenset([4]), '-->', frozenset([1]), 'conf:', 1.0)
+('freqSet', frozenset([1, 4]))
+('conseq', frozenset([4]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([1]))
+('supportData[freqSet-conseq]', 0.6)
+('conf', 0.6666666666666667)
+(frozenset([1]), '-->', frozenset([4]), 'conf:', 0.6666666666666667)
+------------------------------
+out calcConf
+------------------------------
+('H1', [frozenset([1]), frozenset([5])])
+('i', 1)
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([1]), frozenset([5])])
+('freqSet', frozenset([1, 5]))
+('conseq', frozenset([1]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([5]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.5)
+(frozenset([5]), '-->', frozenset([1]), 'conf:', 0.5)
+('freqSet', frozenset([1, 5]))
+('conseq', frozenset([5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([1]))
+('supportData[freqSet-conseq]', 0.6)
+('conf', 0.6666666666666667)
+(frozenset([1]), '-->', frozenset([5]), 'conf:', 0.6666666666666667)
+------------------------------
+out calcConf
+------------------------------
+('H1', [frozenset([1]), frozenset([2])])
+('i', 1)
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([1]), frozenset([2])])
+('freqSet', frozenset([1, 2]))
+('conseq', frozenset([1]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([2]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.5)
+(frozenset([2]), '-->', frozenset([1]), 'conf:', 0.5)
+('freqSet', frozenset([1, 2]))
+('conseq', frozenset([2]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([1]))
+('supportData[freqSet-conseq]', 0.6)
+('conf', 0.6666666666666667)
+(frozenset([1]), '-->', frozenset([2]), 'conf:', 0.6666666666666667)
+------------------------------
+out calcConf
+------------------------------
+('H1', [frozenset([1]), frozenset([2]), frozenset([3])])
+('i', 2)
+------------------------------
+in rulesFromConseq
+------------------------------
+('H[0]', frozenset([1]))
+('len(H[0])', 1)
+('m', 1)
+('freqSet', frozenset([1, 2, 3]))
+('len(freqSet)', 3)
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('br1', [(frozenset([3]), frozenset([1]), 0.7499999999999999), (frozenset([1]), frozenset([3]), 1.0), (frozenset([5]), frozenset([2]), 1.0), (frozenset([2]), frozenset([5]), 1.0), (frozenset([3]), frozenset([2]), 0.7499999999999999), (frozenset([2]), frozenset([3]), 0.7499999999999999), (frozenset([4]), frozenset([3]), 1.0), (frozenset([3]), frozenset([4]), 0.5), (frozenset([5]), frozenset([3]), 0.7499999999999999), (frozenset([3]), frozenset([5]), 0.7499999999999999), (frozenset([4]), frozenset([1]), 1.0), (frozenset([1]), frozenset([4]), 0.6666666666666667), (frozenset([5]), frozenset([1]), 0.5), (frozenset([1]), frozenset([5]), 0.6666666666666667), (frozenset([2]), frozenset([1]), 0.5), (frozenset([1]), frozenset([2]), 0.6666666666666667)])
+('m+1', 2)
+('H', [frozenset([1]), frozenset([2]), frozenset([3])])
+('Hmp1 after aprioriGen', [frozenset([1, 2]), frozenset([1, 3]), frozenset([2, 3])])
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([1, 2]), frozenset([1, 3]), frozenset([2, 3])])
+('freqSet', frozenset([1, 2, 3]))
+('conseq', frozenset([1, 2]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([3]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.5)
+(frozenset([3]), '-->', frozenset([1, 2]), 'conf:', 0.5)
+('freqSet', frozenset([1, 2, 3]))
+('conseq', frozenset([1, 3]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([2]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.5)
+(frozenset([2]), '-->', frozenset([1, 3]), 'conf:', 0.5)
+('freqSet', frozenset([1, 2, 3]))
+('conseq', frozenset([2, 3]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([1]))
+('supportData[freqSet-conseq]', 0.6)
+('conf', 0.6666666666666667)
+(frozenset([1]), '-->', frozenset([2, 3]), 'conf:', 0.6666666666666667)
+------------------------------
+out calcConf
+------------------------------
+('Hmp1 after calcConf', [frozenset([1, 2]), frozenset([1, 3]), frozenset([2, 3])])
+------------------------------
+in rulesFromConseq
+------------------------------
+('H[0]', frozenset([1, 2]))
+('len(H[0])', 2)
+('m', 2)
+('freqSet', frozenset([1, 2, 3]))
+('len(freqSet)', 3)
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('br1', [(frozenset([3]), frozenset([1]), 0.7499999999999999), (frozenset([1]), frozenset([3]), 1.0), (frozenset([5]), frozenset([2]), 1.0), (frozenset([2]), frozenset([5]), 1.0), (frozenset([3]), frozenset([2]), 0.7499999999999999), (frozenset([2]), frozenset([3]), 0.7499999999999999), (frozenset([4]), frozenset([3]), 1.0), (frozenset([3]), frozenset([4]), 0.5), (frozenset([5]), frozenset([3]), 0.7499999999999999), (frozenset([3]), frozenset([5]), 0.7499999999999999), (frozenset([4]), frozenset([1]), 1.0), (frozenset([1]), frozenset([4]), 0.6666666666666667), (frozenset([5]), frozenset([1]), 0.5), (frozenset([1]), frozenset([5]), 0.6666666666666667), (frozenset([2]), frozenset([1]), 0.5), (frozenset([1]), frozenset([2]), 0.6666666666666667), (frozenset([3]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 3]), 0.5), (frozenset([1]), frozenset([2, 3]), 0.6666666666666667)])
+('m+1', 3)
+('H', [frozenset([1, 2]), frozenset([1, 3]), frozenset([2, 3])])
+------------------------------
+out rulesFromConseq
+------------------------------
+------------------------------
+out rulesFromConseq
+------------------------------
+('H1', [frozenset([1]), frozenset([3]), frozenset([4])])
+('i', 2)
+------------------------------
+in rulesFromConseq
+------------------------------
+('H[0]', frozenset([1]))
+('len(H[0])', 1)
+('m', 1)
+('freqSet', frozenset([1, 3, 4]))
+('len(freqSet)', 3)
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('br1', [(frozenset([3]), frozenset([1]), 0.7499999999999999), (frozenset([1]), frozenset([3]), 1.0), (frozenset([5]), frozenset([2]), 1.0), (frozenset([2]), frozenset([5]), 1.0), (frozenset([3]), frozenset([2]), 0.7499999999999999), (frozenset([2]), frozenset([3]), 0.7499999999999999), (frozenset([4]), frozenset([3]), 1.0), (frozenset([3]), frozenset([4]), 0.5), (frozenset([5]), frozenset([3]), 0.7499999999999999), (frozenset([3]), frozenset([5]), 0.7499999999999999), (frozenset([4]), frozenset([1]), 1.0), (frozenset([1]), frozenset([4]), 0.6666666666666667), (frozenset([5]), frozenset([1]), 0.5), (frozenset([1]), frozenset([5]), 0.6666666666666667), (frozenset([2]), frozenset([1]), 0.5), (frozenset([1]), frozenset([2]), 0.6666666666666667), (frozenset([3]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 3]), 0.5), (frozenset([1]), frozenset([2, 3]), 0.6666666666666667)])
+('m+1', 2)
+('H', [frozenset([1]), frozenset([3]), frozenset([4])])
+('Hmp1 after aprioriGen', [frozenset([1, 3]), frozenset([1, 4]), frozenset([3, 4])])
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([1, 3]), frozenset([1, 4]), frozenset([3, 4])])
+('freqSet', frozenset([1, 3, 4]))
+('conseq', frozenset([1, 3]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([4]))
+('supportData[freqSet-conseq]', 0.4)
+('conf', 1.0)
+(frozenset([4]), '-->', frozenset([1, 3]), 'conf:', 1.0)
+('freqSet', frozenset([1, 3, 4]))
+('conseq', frozenset([1, 4]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([3]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.5)
+(frozenset([3]), '-->', frozenset([1, 4]), 'conf:', 0.5)
+('freqSet', frozenset([1, 3, 4]))
+('conseq', frozenset([3, 4]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([1]))
+('supportData[freqSet-conseq]', 0.6)
+('conf', 0.6666666666666667)
+(frozenset([1]), '-->', frozenset([3, 4]), 'conf:', 0.6666666666666667)
+------------------------------
+out calcConf
+------------------------------
+('Hmp1 after calcConf', [frozenset([1, 3]), frozenset([1, 4]), frozenset([3, 4])])
+------------------------------
+in rulesFromConseq
+------------------------------
+('H[0]', frozenset([1, 3]))
+('len(H[0])', 2)
+('m', 2)
+('freqSet', frozenset([1, 3, 4]))
+('len(freqSet)', 3)
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('br1', [(frozenset([3]), frozenset([1]), 0.7499999999999999), (frozenset([1]), frozenset([3]), 1.0), (frozenset([5]), frozenset([2]), 1.0), (frozenset([2]), frozenset([5]), 1.0), (frozenset([3]), frozenset([2]), 0.7499999999999999), (frozenset([2]), frozenset([3]), 0.7499999999999999), (frozenset([4]), frozenset([3]), 1.0), (frozenset([3]), frozenset([4]), 0.5), (frozenset([5]), frozenset([3]), 0.7499999999999999), (frozenset([3]), frozenset([5]), 0.7499999999999999), (frozenset([4]), frozenset([1]), 1.0), (frozenset([1]), frozenset([4]), 0.6666666666666667), (frozenset([5]), frozenset([1]), 0.5), (frozenset([1]), frozenset([5]), 0.6666666666666667), (frozenset([2]), frozenset([1]), 0.5), (frozenset([1]), frozenset([2]), 0.6666666666666667), (frozenset([3]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 3]), 0.5), (frozenset([1]), frozenset([2, 3]), 0.6666666666666667), (frozenset([4]), frozenset([1, 3]), 1.0), (frozenset([3]), frozenset([1, 4]), 0.5), (frozenset([1]), frozenset([3, 4]), 0.6666666666666667)])
+('m+1', 3)
+('H', [frozenset([1, 3]), frozenset([1, 4]), frozenset([3, 4])])
+------------------------------
+out rulesFromConseq
+------------------------------
+------------------------------
+out rulesFromConseq
+------------------------------
+('H1', [frozenset([1]), frozenset([2]), frozenset([5])])
+('i', 2)
+------------------------------
+in rulesFromConseq
+------------------------------
+('H[0]', frozenset([1]))
+('len(H[0])', 1)
+('m', 1)
+('freqSet', frozenset([1, 2, 5]))
+('len(freqSet)', 3)
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('br1', [(frozenset([3]), frozenset([1]), 0.7499999999999999), (frozenset([1]), frozenset([3]), 1.0), (frozenset([5]), frozenset([2]), 1.0), (frozenset([2]), frozenset([5]), 1.0), (frozenset([3]), frozenset([2]), 0.7499999999999999), (frozenset([2]), frozenset([3]), 0.7499999999999999), (frozenset([4]), frozenset([3]), 1.0), (frozenset([3]), frozenset([4]), 0.5), (frozenset([5]), frozenset([3]), 0.7499999999999999), (frozenset([3]), frozenset([5]), 0.7499999999999999), (frozenset([4]), frozenset([1]), 1.0), (frozenset([1]), frozenset([4]), 0.6666666666666667), (frozenset([5]), frozenset([1]), 0.5), (frozenset([1]), frozenset([5]), 0.6666666666666667), (frozenset([2]), frozenset([1]), 0.5), (frozenset([1]), frozenset([2]), 0.6666666666666667), (frozenset([3]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 3]), 0.5), (frozenset([1]), frozenset([2, 3]), 0.6666666666666667), (frozenset([4]), frozenset([1, 3]), 1.0), (frozenset([3]), frozenset([1, 4]), 0.5), (frozenset([1]), frozenset([3, 4]), 0.6666666666666667)])
+('m+1', 2)
+('H', [frozenset([1]), frozenset([2]), frozenset([5])])
+('Hmp1 after aprioriGen', [frozenset([1, 2]), frozenset([1, 5]), frozenset([2, 5])])
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([1, 2]), frozenset([1, 5]), frozenset([2, 5])])
+('freqSet', frozenset([1, 2, 5]))
+('conseq', frozenset([1, 2]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([5]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.5)
+(frozenset([5]), '-->', frozenset([1, 2]), 'conf:', 0.5)
+('freqSet', frozenset([1, 2, 5]))
+('conseq', frozenset([1, 5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([2]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.5)
+(frozenset([2]), '-->', frozenset([1, 5]), 'conf:', 0.5)
+('freqSet', frozenset([1, 2, 5]))
+('conseq', frozenset([2, 5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([1]))
+('supportData[freqSet-conseq]', 0.6)
+('conf', 0.6666666666666667)
+(frozenset([1]), '-->', frozenset([2, 5]), 'conf:', 0.6666666666666667)
+------------------------------
+out calcConf
+------------------------------
+('Hmp1 after calcConf', [frozenset([1, 2]), frozenset([1, 5]), frozenset([2, 5])])
+------------------------------
+in rulesFromConseq
+------------------------------
+('H[0]', frozenset([1, 2]))
+('len(H[0])', 2)
+('m', 2)
+('freqSet', frozenset([1, 2, 5]))
+('len(freqSet)', 3)
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('br1', [(frozenset([3]), frozenset([1]), 0.7499999999999999), (frozenset([1]), frozenset([3]), 1.0), (frozenset([5]), frozenset([2]), 1.0), (frozenset([2]), frozenset([5]), 1.0), (frozenset([3]), frozenset([2]), 0.7499999999999999), (frozenset([2]), frozenset([3]), 0.7499999999999999), (frozenset([4]), frozenset([3]), 1.0), (frozenset([3]), frozenset([4]), 0.5), (frozenset([5]), frozenset([3]), 0.7499999999999999), (frozenset([3]), frozenset([5]), 0.7499999999999999), (frozenset([4]), frozenset([1]), 1.0), (frozenset([1]), frozenset([4]), 0.6666666666666667), (frozenset([5]), frozenset([1]), 0.5), (frozenset([1]), frozenset([5]), 0.6666666666666667), (frozenset([2]), frozenset([1]), 0.5), (frozenset([1]), frozenset([2]), 0.6666666666666667), (frozenset([3]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 3]), 0.5), (frozenset([1]), frozenset([2, 3]), 0.6666666666666667), (frozenset([4]), frozenset([1, 3]), 1.0), (frozenset([3]), frozenset([1, 4]), 0.5), (frozenset([1]), frozenset([3, 4]), 0.6666666666666667), (frozenset([5]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 5]), 0.5), (frozenset([1]), frozenset([2, 5]), 0.6666666666666667)])
+('m+1', 3)
+('H', [frozenset([1, 2]), frozenset([1, 5]), frozenset([2, 5])])
+------------------------------
+out rulesFromConseq
+------------------------------
+------------------------------
+out rulesFromConseq
+------------------------------
+('H1', [frozenset([2]), frozenset([3]), frozenset([5])])
+('i', 2)
+------------------------------
+in rulesFromConseq
+------------------------------
+('H[0]', frozenset([2]))
+('len(H[0])', 1)
+('m', 1)
+('freqSet', frozenset([2, 3, 5]))
+('len(freqSet)', 3)
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('br1', [(frozenset([3]), frozenset([1]), 0.7499999999999999), (frozenset([1]), frozenset([3]), 1.0), (frozenset([5]), frozenset([2]), 1.0), (frozenset([2]), frozenset([5]), 1.0), (frozenset([3]), frozenset([2]), 0.7499999999999999), (frozenset([2]), frozenset([3]), 0.7499999999999999), (frozenset([4]), frozenset([3]), 1.0), (frozenset([3]), frozenset([4]), 0.5), (frozenset([5]), frozenset([3]), 0.7499999999999999), (frozenset([3]), frozenset([5]), 0.7499999999999999), (frozenset([4]), frozenset([1]), 1.0), (frozenset([1]), frozenset([4]), 0.6666666666666667), (frozenset([5]), frozenset([1]), 0.5), (frozenset([1]), frozenset([5]), 0.6666666666666667), (frozenset([2]), frozenset([1]), 0.5), (frozenset([1]), frozenset([2]), 0.6666666666666667), (frozenset([3]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 3]), 0.5), (frozenset([1]), frozenset([2, 3]), 0.6666666666666667), (frozenset([4]), frozenset([1, 3]), 1.0), (frozenset([3]), frozenset([1, 4]), 0.5), (frozenset([1]), frozenset([3, 4]), 0.6666666666666667), (frozenset([5]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 5]), 0.5), (frozenset([1]), frozenset([2, 5]), 0.6666666666666667)])
+('m+1', 2)
+('H', [frozenset([2]), frozenset([3]), frozenset([5])])
+('Hmp1 after aprioriGen', [frozenset([2, 3]), frozenset([2, 5]), frozenset([3, 5])])
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([2, 3]), frozenset([2, 5]), frozenset([3, 5])])
+('freqSet', frozenset([2, 3, 5]))
+('conseq', frozenset([2, 3]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.6)
+('freqSet-conseq', frozenset([5]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.7499999999999999)
+(frozenset([5]), '-->', frozenset([2, 3]), 'conf:', 0.7499999999999999)
+('freqSet', frozenset([2, 3, 5]))
+('conseq', frozenset([2, 5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.6)
+('freqSet-conseq', frozenset([3]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.7499999999999999)
+(frozenset([3]), '-->', frozenset([2, 5]), 'conf:', 0.7499999999999999)
+('freqSet', frozenset([2, 3, 5]))
+('conseq', frozenset([3, 5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.6)
+('freqSet-conseq', frozenset([2]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.7499999999999999)
+(frozenset([2]), '-->', frozenset([3, 5]), 'conf:', 0.7499999999999999)
+------------------------------
+out calcConf
+------------------------------
+('Hmp1 after calcConf', [frozenset([2, 3]), frozenset([2, 5]), frozenset([3, 5])])
+------------------------------
+in rulesFromConseq
+------------------------------
+('H[0]', frozenset([2, 3]))
+('len(H[0])', 2)
+('m', 2)
+('freqSet', frozenset([2, 3, 5]))
+('len(freqSet)', 3)
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('br1', [(frozenset([3]), frozenset([1]), 0.7499999999999999), (frozenset([1]), frozenset([3]), 1.0), (frozenset([5]), frozenset([2]), 1.0), (frozenset([2]), frozenset([5]), 1.0), (frozenset([3]), frozenset([2]), 0.7499999999999999), (frozenset([2]), frozenset([3]), 0.7499999999999999), (frozenset([4]), frozenset([3]), 1.0), (frozenset([3]), frozenset([4]), 0.5), (frozenset([5]), frozenset([3]), 0.7499999999999999), (frozenset([3]), frozenset([5]), 0.7499999999999999), (frozenset([4]), frozenset([1]), 1.0), (frozenset([1]), frozenset([4]), 0.6666666666666667), (frozenset([5]), frozenset([1]), 0.5), (frozenset([1]), frozenset([5]), 0.6666666666666667), (frozenset([2]), frozenset([1]), 0.5), (frozenset([1]), frozenset([2]), 0.6666666666666667), (frozenset([3]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 3]), 0.5), (frozenset([1]), frozenset([2, 3]), 0.6666666666666667), (frozenset([4]), frozenset([1, 3]), 1.0), (frozenset([3]), frozenset([1, 4]), 0.5), (frozenset([1]), frozenset([3, 4]), 0.6666666666666667), (frozenset([5]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 5]), 0.5), (frozenset([1]), frozenset([2, 5]), 0.6666666666666667), (frozenset([5]), frozenset([2, 3]), 0.7499999999999999), (frozenset([3]), frozenset([2, 5]), 0.7499999999999999), (frozenset([2]), frozenset([3, 5]), 0.7499999999999999)])
+('m+1', 3)
+('H', [frozenset([2, 3]), frozenset([2, 5]), frozenset([3, 5])])
+------------------------------
+out rulesFromConseq
+------------------------------
+------------------------------
+out rulesFromConseq
+------------------------------
+('H1', [frozenset([1]), frozenset([3]), frozenset([5])])
+('i', 2)
+------------------------------
+in rulesFromConseq
+------------------------------
+('H[0]', frozenset([1]))
+('len(H[0])', 1)
+('m', 1)
+('freqSet', frozenset([1, 3, 5]))
+('len(freqSet)', 3)
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('br1', [(frozenset([3]), frozenset([1]), 0.7499999999999999), (frozenset([1]), frozenset([3]), 1.0), (frozenset([5]), frozenset([2]), 1.0), (frozenset([2]), frozenset([5]), 1.0), (frozenset([3]), frozenset([2]), 0.7499999999999999), (frozenset([2]), frozenset([3]), 0.7499999999999999), (frozenset([4]), frozenset([3]), 1.0), (frozenset([3]), frozenset([4]), 0.5), (frozenset([5]), frozenset([3]), 0.7499999999999999), (frozenset([3]), frozenset([5]), 0.7499999999999999), (frozenset([4]), frozenset([1]), 1.0), (frozenset([1]), frozenset([4]), 0.6666666666666667), (frozenset([5]), frozenset([1]), 0.5), (frozenset([1]), frozenset([5]), 0.6666666666666667), (frozenset([2]), frozenset([1]), 0.5), (frozenset([1]), frozenset([2]), 0.6666666666666667), (frozenset([3]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 3]), 0.5), (frozenset([1]), frozenset([2, 3]), 0.6666666666666667), (frozenset([4]), frozenset([1, 3]), 1.0), (frozenset([3]), frozenset([1, 4]), 0.5), (frozenset([1]), frozenset([3, 4]), 0.6666666666666667), (frozenset([5]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 5]), 0.5), (frozenset([1]), frozenset([2, 5]), 0.6666666666666667), (frozenset([5]), frozenset([2, 3]), 0.7499999999999999), (frozenset([3]), frozenset([2, 5]), 0.7499999999999999), (frozenset([2]), frozenset([3, 5]), 0.7499999999999999)])
+('m+1', 2)
+('H', [frozenset([1]), frozenset([3]), frozenset([5])])
+('Hmp1 after aprioriGen', [frozenset([1, 3]), frozenset([1, 5]), frozenset([3, 5])])
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([1, 3]), frozenset([1, 5]), frozenset([3, 5])])
+('freqSet', frozenset([1, 3, 5]))
+('conseq', frozenset([1, 3]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([5]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.5)
+(frozenset([5]), '-->', frozenset([1, 3]), 'conf:', 0.5)
+('freqSet', frozenset([1, 3, 5]))
+('conseq', frozenset([1, 5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([3]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.5)
+(frozenset([3]), '-->', frozenset([1, 5]), 'conf:', 0.5)
+('freqSet', frozenset([1, 3, 5]))
+('conseq', frozenset([3, 5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([1]))
+('supportData[freqSet-conseq]', 0.6)
+('conf', 0.6666666666666667)
+(frozenset([1]), '-->', frozenset([3, 5]), 'conf:', 0.6666666666666667)
+------------------------------
+out calcConf
+------------------------------
+('Hmp1 after calcConf', [frozenset([1, 3]), frozenset([1, 5]), frozenset([3, 5])])
+------------------------------
+in rulesFromConseq
+------------------------------
+('H[0]', frozenset([1, 3]))
+('len(H[0])', 2)
+('m', 2)
+('freqSet', frozenset([1, 3, 5]))
+('len(freqSet)', 3)
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('br1', [(frozenset([3]), frozenset([1]), 0.7499999999999999), (frozenset([1]), frozenset([3]), 1.0), (frozenset([5]), frozenset([2]), 1.0), (frozenset([2]), frozenset([5]), 1.0), (frozenset([3]), frozenset([2]), 0.7499999999999999), (frozenset([2]), frozenset([3]), 0.7499999999999999), (frozenset([4]), frozenset([3]), 1.0), (frozenset([3]), frozenset([4]), 0.5), (frozenset([5]), frozenset([3]), 0.7499999999999999), (frozenset([3]), frozenset([5]), 0.7499999999999999), (frozenset([4]), frozenset([1]), 1.0), (frozenset([1]), frozenset([4]), 0.6666666666666667), (frozenset([5]), frozenset([1]), 0.5), (frozenset([1]), frozenset([5]), 0.6666666666666667), (frozenset([2]), frozenset([1]), 0.5), (frozenset([1]), frozenset([2]), 0.6666666666666667), (frozenset([3]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 3]), 0.5), (frozenset([1]), frozenset([2, 3]), 0.6666666666666667), (frozenset([4]), frozenset([1, 3]), 1.0), (frozenset([3]), frozenset([1, 4]), 0.5), (frozenset([1]), frozenset([3, 4]), 0.6666666666666667), (frozenset([5]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 5]), 0.5), (frozenset([1]), frozenset([2, 5]), 0.6666666666666667), (frozenset([5]), frozenset([2, 3]), 0.7499999999999999), (frozenset([3]), frozenset([2, 5]), 0.7499999999999999), (frozenset([2]), frozenset([3, 5]), 0.7499999999999999), (frozenset([5]), frozenset([1, 3]), 0.5), (frozenset([3]), frozenset([1, 5]), 0.5), (frozenset([1]), frozenset([3, 5]), 0.6666666666666667)])
+('m+1', 3)
+('H', [frozenset([1, 3]), frozenset([1, 5]), frozenset([3, 5])])
+------------------------------
+out rulesFromConseq
+------------------------------
+------------------------------
+out rulesFromConseq
+------------------------------
+('H1', [frozenset([1]), frozenset([2]), frozenset([3]), frozenset([5])])
+('i', 3)
+------------------------------
+in rulesFromConseq
+------------------------------
+('H[0]', frozenset([1]))
+('len(H[0])', 1)
+('m', 1)
+('freqSet', frozenset([1, 2, 3, 5]))
+('len(freqSet)', 4)
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('br1', [(frozenset([3]), frozenset([1]), 0.7499999999999999), (frozenset([1]), frozenset([3]), 1.0), (frozenset([5]), frozenset([2]), 1.0), (frozenset([2]), frozenset([5]), 1.0), (frozenset([3]), frozenset([2]), 0.7499999999999999), (frozenset([2]), frozenset([3]), 0.7499999999999999), (frozenset([4]), frozenset([3]), 1.0), (frozenset([3]), frozenset([4]), 0.5), (frozenset([5]), frozenset([3]), 0.7499999999999999), (frozenset([3]), frozenset([5]), 0.7499999999999999), (frozenset([4]), frozenset([1]), 1.0), (frozenset([1]), frozenset([4]), 0.6666666666666667), (frozenset([5]), frozenset([1]), 0.5), (frozenset([1]), frozenset([5]), 0.6666666666666667), (frozenset([2]), frozenset([1]), 0.5), (frozenset([1]), frozenset([2]), 0.6666666666666667), (frozenset([3]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 3]), 0.5), (frozenset([1]), frozenset([2, 3]), 0.6666666666666667), (frozenset([4]), frozenset([1, 3]), 1.0), (frozenset([3]), frozenset([1, 4]), 0.5), (frozenset([1]), frozenset([3, 4]), 0.6666666666666667), (frozenset([5]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 5]), 0.5), (frozenset([1]), frozenset([2, 5]), 0.6666666666666667), (frozenset([5]), frozenset([2, 3]), 0.7499999999999999), (frozenset([3]), frozenset([2, 5]), 0.7499999999999999), (frozenset([2]), frozenset([3, 5]), 0.7499999999999999), (frozenset([5]), frozenset([1, 3]), 0.5), (frozenset([3]), frozenset([1, 5]), 0.5), (frozenset([1]), frozenset([3, 5]), 0.6666666666666667)])
+('m+1', 2)
+('H', [frozenset([1]), frozenset([2]), frozenset([3]), frozenset([5])])
+('Hmp1 after aprioriGen', [frozenset([1, 2]), frozenset([1, 3]), frozenset([1, 5]), frozenset([2, 3]), frozenset([2, 5]), frozenset([3, 5])])
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([1, 2]), frozenset([1, 3]), frozenset([1, 5]), frozenset([2, 3]), frozenset([2, 5]), frozenset([3, 5])])
+('freqSet', frozenset([1, 2, 3, 5]))
+('conseq', frozenset([1, 2]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([3, 5]))
+('supportData[freqSet-conseq]', 0.6)
+('conf', 0.6666666666666667)
+(frozenset([3, 5]), '-->', frozenset([1, 2]), 'conf:', 0.6666666666666667)
+('freqSet', frozenset([1, 2, 3, 5]))
+('conseq', frozenset([1, 3]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([2, 5]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.5)
+(frozenset([2, 5]), '-->', frozenset([1, 3]), 'conf:', 0.5)
+('freqSet', frozenset([1, 2, 3, 5]))
+('conseq', frozenset([1, 5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([2, 3]))
+('supportData[freqSet-conseq]', 0.6)
+('conf', 0.6666666666666667)
+(frozenset([2, 3]), '-->', frozenset([1, 5]), 'conf:', 0.6666666666666667)
+('freqSet', frozenset([1, 2, 3, 5]))
+('conseq', frozenset([2, 3]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([1, 5]))
+('supportData[freqSet-conseq]', 0.4)
+('conf', 1.0)
+(frozenset([1, 5]), '-->', frozenset([2, 3]), 'conf:', 1.0)
+('freqSet', frozenset([1, 2, 3, 5]))
+('conseq', frozenset([2, 5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([1, 3]))
+('supportData[freqSet-conseq]', 0.6)
+('conf', 0.6666666666666667)
+(frozenset([1, 3]), '-->', frozenset([2, 5]), 'conf:', 0.6666666666666667)
+('freqSet', frozenset([1, 2, 3, 5]))
+('conseq', frozenset([3, 5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([1, 2]))
+('supportData[freqSet-conseq]', 0.4)
+('conf', 1.0)
+(frozenset([1, 2]), '-->', frozenset([3, 5]), 'conf:', 1.0)
+------------------------------
+out calcConf
+------------------------------
+('Hmp1 after calcConf', [frozenset([1, 2]), frozenset([1, 3]), frozenset([1, 5]), frozenset([2, 3]), frozenset([2, 5]), frozenset([3, 5])])
+------------------------------
+in rulesFromConseq
+------------------------------
+('H[0]', frozenset([1, 2]))
+('len(H[0])', 2)
+('m', 2)
+('freqSet', frozenset([1, 2, 3, 5]))
+('len(freqSet)', 4)
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('br1', [(frozenset([3]), frozenset([1]), 0.7499999999999999), (frozenset([1]), frozenset([3]), 1.0), (frozenset([5]), frozenset([2]), 1.0), (frozenset([2]), frozenset([5]), 1.0), (frozenset([3]), frozenset([2]), 0.7499999999999999), (frozenset([2]), frozenset([3]), 0.7499999999999999), (frozenset([4]), frozenset([3]), 1.0), (frozenset([3]), frozenset([4]), 0.5), (frozenset([5]), frozenset([3]), 0.7499999999999999), (frozenset([3]), frozenset([5]), 0.7499999999999999), (frozenset([4]), frozenset([1]), 1.0), (frozenset([1]), frozenset([4]), 0.6666666666666667), (frozenset([5]), frozenset([1]), 0.5), (frozenset([1]), frozenset([5]), 0.6666666666666667), (frozenset([2]), frozenset([1]), 0.5), (frozenset([1]), frozenset([2]), 0.6666666666666667), (frozenset([3]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 3]), 0.5), (frozenset([1]), frozenset([2, 3]), 0.6666666666666667), (frozenset([4]), frozenset([1, 3]), 1.0), (frozenset([3]), frozenset([1, 4]), 0.5), (frozenset([1]), frozenset([3, 4]), 0.6666666666666667), (frozenset([5]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 5]), 0.5), (frozenset([1]), frozenset([2, 5]), 0.6666666666666667), (frozenset([5]), frozenset([2, 3]), 0.7499999999999999), (frozenset([3]), frozenset([2, 5]), 0.7499999999999999), (frozenset([2]), frozenset([3, 5]), 0.7499999999999999), (frozenset([5]), frozenset([1, 3]), 0.5), (frozenset([3]), frozenset([1, 5]), 0.5), (frozenset([1]), frozenset([3, 5]), 0.6666666666666667), (frozenset([3, 5]), frozenset([1, 2]), 0.6666666666666667), (frozenset([2, 5]), frozenset([1, 3]), 0.5), (frozenset([2, 3]), frozenset([1, 5]), 0.6666666666666667), (frozenset([1, 5]), frozenset([2, 3]), 1.0), (frozenset([1, 3]), frozenset([2, 5]), 0.6666666666666667), (frozenset([1, 2]), frozenset([3, 5]), 1.0)])
+('m+1', 3)
+('H', [frozenset([1, 2]), frozenset([1, 3]), frozenset([1, 5]), frozenset([2, 3]), frozenset([2, 5]), frozenset([3, 5])])
+('Hmp1 after aprioriGen', [frozenset([1, 2, 3]), frozenset([1, 2, 5]), frozenset([1, 3, 5]), frozenset([2, 3, 5])])
+------------------------------
+in calcConf
+------------------------------
+('H', [frozenset([1, 2, 3]), frozenset([1, 2, 5]), frozenset([1, 3, 5]), frozenset([2, 3, 5])])
+('freqSet', frozenset([1, 2, 3, 5]))
+('conseq', frozenset([1, 2, 3]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([5]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.5)
+(frozenset([5]), '-->', frozenset([1, 2, 3]), 'conf:', 0.5)
+('freqSet', frozenset([1, 2, 3, 5]))
+('conseq', frozenset([1, 2, 5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([3]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.5)
+(frozenset([3]), '-->', frozenset([1, 2, 5]), 'conf:', 0.5)
+('freqSet', frozenset([1, 2, 3, 5]))
+('conseq', frozenset([1, 3, 5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([2]))
+('supportData[freqSet-conseq]', 0.8)
+('conf', 0.5)
+(frozenset([2]), '-->', frozenset([1, 3, 5]), 'conf:', 0.5)
+('freqSet', frozenset([1, 2, 3, 5]))
+('conseq', frozenset([2, 3, 5]))
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('supportData[freqSet]', 0.4)
+('freqSet-conseq', frozenset([1]))
+('supportData[freqSet-conseq]', 0.6)
+('conf', 0.6666666666666667)
+(frozenset([1]), '-->', frozenset([2, 3, 5]), 'conf:', 0.6666666666666667)
+------------------------------
+out calcConf
+------------------------------
+('Hmp1 after calcConf', [frozenset([1, 2, 3]), frozenset([1, 2, 5]), frozenset([1, 3, 5]), frozenset([2, 3, 5])])
+------------------------------
+in rulesFromConseq
+------------------------------
+('H[0]', frozenset([1, 2, 3]))
+('len(H[0])', 3)
+('m', 3)
+('freqSet', frozenset([1, 2, 3, 5]))
+('len(freqSet)', 4)
+('supportData', {frozenset([1, 2]): 0.4, frozenset([1, 5]): 0.4, frozenset([1, 2, 3, 5]): 0.4, frozenset([1, 2, 4]): 0.2, frozenset([1, 4, 5]): 0.2, frozenset([4]): 0.4, frozenset([1, 3, 5]): 0.4, frozenset([1, 3, 4, 5]): 0.2, frozenset([1, 3]): 0.6, frozenset([2, 4]): 0.2, frozenset([5]): 0.8, frozenset([3]): 0.8, frozenset([3, 4, 5]): 0.2, frozenset([2, 3, 5]): 0.6, frozenset([1, 2, 3]): 0.4, frozenset([1, 4]): 0.4, frozenset([3, 5]): 0.6, frozenset([1, 3, 4]): 0.4, frozenset([1, 2, 5]): 0.4, frozenset([3, 4]): 0.4, frozenset([2, 3]): 0.6, frozenset([2, 5]): 0.8, frozenset([1]): 0.6, frozenset([2]): 0.8, frozenset([4, 5]): 0.2})
+('br1', [(frozenset([3]), frozenset([1]), 0.7499999999999999), (frozenset([1]), frozenset([3]), 1.0), (frozenset([5]), frozenset([2]), 1.0), (frozenset([2]), frozenset([5]), 1.0), (frozenset([3]), frozenset([2]), 0.7499999999999999), (frozenset([2]), frozenset([3]), 0.7499999999999999), (frozenset([4]), frozenset([3]), 1.0), (frozenset([3]), frozenset([4]), 0.5), (frozenset([5]), frozenset([3]), 0.7499999999999999), (frozenset([3]), frozenset([5]), 0.7499999999999999), (frozenset([4]), frozenset([1]), 1.0), (frozenset([1]), frozenset([4]), 0.6666666666666667), (frozenset([5]), frozenset([1]), 0.5), (frozenset([1]), frozenset([5]), 0.6666666666666667), (frozenset([2]), frozenset([1]), 0.5), (frozenset([1]), frozenset([2]), 0.6666666666666667), (frozenset([3]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 3]), 0.5), (frozenset([1]), frozenset([2, 3]), 0.6666666666666667), (frozenset([4]), frozenset([1, 3]), 1.0), (frozenset([3]), frozenset([1, 4]), 0.5), (frozenset([1]), frozenset([3, 4]), 0.6666666666666667), (frozenset([5]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 5]), 0.5), (frozenset([1]), frozenset([2, 5]), 0.6666666666666667), (frozenset([5]), frozenset([2, 3]), 0.7499999999999999), (frozenset([3]), frozenset([2, 5]), 0.7499999999999999), (frozenset([2]), frozenset([3, 5]), 0.7499999999999999), (frozenset([5]), frozenset([1, 3]), 0.5), (frozenset([3]), frozenset([1, 5]), 0.5), (frozenset([1]), frozenset([3, 5]), 0.6666666666666667), (frozenset([3, 5]), frozenset([1, 2]), 0.6666666666666667), (frozenset([2, 5]), frozenset([1, 3]), 0.5), (frozenset([2, 3]), frozenset([1, 5]), 0.6666666666666667), (frozenset([1, 5]), frozenset([2, 3]), 1.0), (frozenset([1, 3]), frozenset([2, 5]), 0.6666666666666667), (frozenset([1, 2]), frozenset([3, 5]), 1.0), (frozenset([5]), frozenset([1, 2, 3]), 0.5), (frozenset([3]), frozenset([1, 2, 5]), 0.5), (frozenset([2]), frozenset([1, 3, 5]), 0.5), (frozenset([1]), frozenset([2, 3, 5]), 0.6666666666666667)])
+('m+1', 4)
+('H', [frozenset([1, 2, 3]), frozenset([1, 2, 5]), frozenset([1, 3, 5]), frozenset([2, 3, 5])])
+------------------------------
+out rulesFromConseq
+------------------------------
+------------------------------
+out rulesFromConseq
+------------------------------
+------------------------------
+out rulesFromConseq
+------------------------------
+------------------------------
+out generateRules
+------------------------------
+('rules', [(frozenset([3]), frozenset([1]), 0.7499999999999999), (frozenset([1]), frozenset([3]), 1.0), (frozenset([5]), frozenset([2]), 1.0), (frozenset([2]), frozenset([5]), 1.0), (frozenset([3]), frozenset([2]), 0.7499999999999999), (frozenset([2]), frozenset([3]), 0.7499999999999999), (frozenset([4]), frozenset([3]), 1.0), (frozenset([3]), frozenset([4]), 0.5), (frozenset([5]), frozenset([3]), 0.7499999999999999), (frozenset([3]), frozenset([5]), 0.7499999999999999), (frozenset([4]), frozenset([1]), 1.0), (frozenset([1]), frozenset([4]), 0.6666666666666667), (frozenset([5]), frozenset([1]), 0.5), (frozenset([1]), frozenset([5]), 0.6666666666666667), (frozenset([2]), frozenset([1]), 0.5), (frozenset([1]), frozenset([2]), 0.6666666666666667), (frozenset([3]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 3]), 0.5), (frozenset([1]), frozenset([2, 3]), 0.6666666666666667), (frozenset([4]), frozenset([1, 3]), 1.0), (frozenset([3]), frozenset([1, 4]), 0.5), (frozenset([1]), frozenset([3, 4]), 0.6666666666666667), (frozenset([5]), frozenset([1, 2]), 0.5), (frozenset([2]), frozenset([1, 5]), 0.5), (frozenset([1]), frozenset([2, 5]), 0.6666666666666667), (frozenset([5]), frozenset([2, 3]), 0.7499999999999999), (frozenset([3]), frozenset([2, 5]), 0.7499999999999999), (frozenset([2]), frozenset([3, 5]), 0.7499999999999999), (frozenset([5]), frozenset([1, 3]), 0.5), (frozenset([3]), frozenset([1, 5]), 0.5), (frozenset([1]), frozenset([3, 5]), 0.6666666666666667), (frozenset([3, 5]), frozenset([1, 2]), 0.6666666666666667), (frozenset([2, 5]), frozenset([1, 3]), 0.5), (frozenset([2, 3]), frozenset([1, 5]), 0.6666666666666667), (frozenset([1, 5]), frozenset([2, 3]), 1.0), (frozenset([1, 3]), frozenset([2, 5]), 0.6666666666666667), (frozenset([1, 2]), frozenset([3, 5]), 1.0), (frozenset([5]), frozenset([1, 2, 3]), 0.5), (frozenset([3]), frozenset([1, 2, 5]), 0.5), (frozenset([2]), frozenset([1, 3, 5]), 0.5), (frozenset([1]), frozenset([2, 3, 5]), 0.6666666666666667)])
